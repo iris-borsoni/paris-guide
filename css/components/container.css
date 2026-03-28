@@ -1,0 +1,28 @@
+/* 1. The Main Settings */
+.container {
+  width: 1200px;
+  margin: 0 auto;    /* This is the magic for centering */
+  text-align: center;
+}
+
+/* 2. Responsive Settings */
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+    /* margin: 0 auto; is already inherited, but we keep an eye on width */
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 90%;      /* Use percentage on small screens so it doesn't break */
+    margin: 0 auto;  /* Reinforce centering */
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
